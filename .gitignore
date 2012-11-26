@@ -1,2 +1,5 @@
 .rake_test_cache
+.rvmrc
+.chef
+cookbooks/getting-started
 

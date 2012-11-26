@@ -1,0 +1,12 @@
+{
+  "name": "fedtop",
+  "chef_environment": "_default",
+  "run_list": [
+
+  ],
+  "normal": {
+    "tags": [
+
+    ]
+  }
+}

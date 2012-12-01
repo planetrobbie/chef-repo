@@ -53,6 +53,10 @@ default[:bootstrap][:packages][:install] = [
                 # It is intelligent and can automatically select the appropriate whois
                 # server for most queries.
 
+  'byobu',	# modern screen
+
+  'iptraf',     # nice network monitoring
+
 ]
 
 default[:bootstrap][:packages][:remove] = []

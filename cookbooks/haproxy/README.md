@@ -15,7 +15,7 @@ Attributes
 ==========
 
 * `node['haproxy']['incoming_port']` - sets the port on which haproxy listens
-* `node['haproxy']['member_port']` - the port that member systems will be listening on, default 80
+* `node['haproxy']['member_port']` - the port that member systems will be listening on, default 8080
 * `node['haproxy']['enable_admin']` - whether to enable the admin interface. default true. Listens on port 22002.
 * `node['haproxy']['app_server_role']` - used by the `app_lb` recipe to search for a specific role of member systems. Default `webserver`.
 * `node['haproxy']['httpchk']` - used by the `app_lb` recipe.  If set, will configure httpchk in haproxy.conf

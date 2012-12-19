@@ -2,4 +2,5 @@
 .rvmrc
 .chef
 cookbooks/getting-started
+data_bags/users/
 

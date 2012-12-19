@@ -7,7 +7,12 @@
 # All rights reserved - Do Not Redistribute
 #
 
+include_recipe "users"
 include_recipe "nginx"
+
+users_manage "www-data" do
+  group_id 33
+end
 
 directory "/var/www" do
   owner "www-data"
@@ -19,10 +24,6 @@ directory "/var/www/yet" do
   owner "www-data"
   group "www-data"
   mode "0775"
-end
-
-group "www-data" do
-  members ['ubuntu']
 end
 
 template "#{node['nginx']['dir']}/sites-available/yet" do

@@ -2,10 +2,20 @@
 # Cookbook Name:: bootstrap
 # Recipe:: default
 #
-# Copyright 2012, YOUR_COMPANY_NAME
+# Copyright 2012, YET
 #
 # All rights reserved - Do Not Redistribute
 #
+
+include_recipe "users"
+
+users_manage "adm" do
+  group_id 4
+end
+
+users_manage "admin" do
+  group_id 111
+end
 
 case node[:platform]
 when "debian", "ubuntu"

@@ -59,4 +59,6 @@ default[:bootstrap][:packages][:install] = [
 
 ]
 
-default[:bootstrap][:packages][:remove] = []
+default[:bootstrap][:packages][:remove] = [
+  'whoopsie',		# remove the call home feature
+]
